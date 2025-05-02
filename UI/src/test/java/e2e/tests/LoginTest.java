@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import e2e.pages.LoginPage;
+import pages.LoginPage;
 
 public class LoginTest {
 
