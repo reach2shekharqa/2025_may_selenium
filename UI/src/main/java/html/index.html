@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selector Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .nav {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: blue;
+    }
+    .active {
+      font-weight: bold;
+      color: darkblue;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+    .featured {
+      background-color: #f9f9f9;
+    }
+    .ad {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #fffbe6;
+      border: 1px dashed orange;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="main-title">Welcome to Selector Practice</h1>
+    <ul class="nav">
+      <li><a href="/home" class="nav-link">Home</a></li>
+      <li><a href="/about" class="nav-link active">About</a></li>
+      <li><a href="/services" class="nav-link">Services</a></li>
+      <li><a href="/contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="content">
+      <p class="intro">This is a practice page for XPath and CSS.</p>
+      <div class="card featured">
+        <h2>Featured Article</h2>
+        <p>Learn how to master XPath and CSS selectors.</p>
+      </div>
+      <div class="card">
+        <h2>Latest Updates</h2>
+        <p>New content is being added regularly.</p>
+      </div>
+    </div>
+
+    <div class="ad">
+      <h3>Sponsored</h3>
+      <p>Try our new CSS & XPath Visualizer tool. Boost your testing efficiency!</p>
+      <a href="https://example.com/visualizer" target="_blank">Learn More</a>
+    </div>
+
+    <footer>
+      <p>© 2025 Selector Practice Inc.</p>
+    </footer>
+  </div>
+</body>
+</html>
