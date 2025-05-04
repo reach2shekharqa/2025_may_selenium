@@ -3,8 +3,10 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
-    private WebDriver driver;
+// import factory.Browser;
+
+public class LoginPage extends BasePage {
+    //private WebDriver driver;
 
     // Locators
     private By usernameField = By.id("user-name");
@@ -13,19 +15,24 @@ public class LoginPage {
 
     // Constructor
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+       super(driver);
     }
 
     // Actions
-    public void enterUsername(String username) {
-        driver.findElement(usernameField).sendKeys(username);
+    public LoginPage enterUsername(String username) {
+       driver.findElement(usernameField).sendKeys(username);
+       return this;
     }
 
-    public void enterPassword(String password) {
-        driver.findElement(passwordField).sendKeys(password);
+    public LoginPage enterPassword(String password) {
+       driver.findElement(passwordField).sendKeys(password);
+       return this;
     }
 
-    public void clickLoginButton() {
+    public HomePage clickLoginButton() {
         driver.findElement(loginButton).click();
+        return new HomePage(driver);
     }
+
+    
 }
